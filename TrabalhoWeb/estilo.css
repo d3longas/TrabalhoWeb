@@ -119,42 +119,54 @@ footer{
   margin: 0;
   position: relative;
 }
-.chart {
+.progresso {
+  text-align: center;
   background: var(--body-color);
-  opacity: 75%;
+  justify-content: flex-start;
   border-radius: 100px;
   align-items: center;
-  position:relative;
-  padding: 0 2px;
-  margin-right: 20px;
-  margin-top: 3px;
+  position: relative;
   display: flex;
-  height: 25px;
+  height: 20px;
   width: 80%;
+  margin-right: 30px;
+  margin-top: 3px;
   float: right;
 }
-  .chart span {
-      /* You can modify the value below to change the distance between the percentage number and the bar */
-      margin-left: 5px;
-      color: var(--footer-color);
-      font-weight: bolder;
-  }
 
-.barra {
-  /* You can modify the total time used for the animation here */
-  animation: load 4s normal forwards;
+.progresso-js{
+  text-align: center;
+  color: var(--link-color);
+  animation: loadJS 3s normal forwards;
   border-radius: 100px;
   background: var(--footer-color);
-  height: 23px;
+  height: 20px;
   width: 0;
 } 
 
-@keyframes load {
+@keyframes loadJS {
   0% {
       width: 0;
   }
   100% {
-      /* You need to change the percentage below to match the value in the corresponding <span> */
+      width: 85%;
+  }
+}
+
+.progresso-css{
+  color: var(--link-color);
+  animation: loadCSS 3s normal forwards;
+  border-radius: 100px;
+  background: var(--footer-color);
+  height: 20px;
+  width: 0;
+} 
+
+@keyframes loadCSS {
+  0% {
+      width: 0;
+  }
+  100% {
       width: 90%;
   }
 }
