@@ -1,33 +1,6 @@
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
-}
-.fa-lg {
-  font-size: 1.33333333em;
-  line-height: .75em;
-  vertical-align: -15%
-}
-.fa-fw {
-  width: 1.28571429em;
-  text-align: center
-}
-
-
 :root {
   --body-bg: #fafafa;
-  --body-color: #555;
-  --link-color: #222;
+  --body-color: #222;
   --link-color-hover: #ec5840;
   --footer-text-color: #899095;
   --footer-color: #3cc368;
@@ -45,18 +18,28 @@ body {
   background-color: var(--body-bg);
   color: var(--body-color);
   font: var(--body-font);
-  margin: 0;;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+  border: 0;
+  border-top: 1px solid var(--footer-text-color);
+  margin: 10px;
+  opacity: 60%;
 }
  
 a {
-  color: var(--link-color);
+  color: var(--body-color);
+  text-decoration: none;
 }
-li{
-  margin-left: 20px;
+a:hover {
+  color: var(--footer-color);
+  border-bottom: 3px solid;
+  border-radius: 2px;
 }
 
 #dark{
-  background-color: var(--link-color);
+  background-color: var(--body-color);
   border: 1px;
   border-radius: 50%;
   width: 40px;
@@ -69,8 +52,8 @@ li{
 }
 
 #dark:hover{
-  background-color: var(--link-color);
-  opacity: 30%;
+  background-color: var(--body-color);
+  opacity: 40%;
   border: 1px;
   border-radius: 50%;
   width: 40px;
@@ -81,10 +64,7 @@ li{
   left: 95%;
 
 }
- 
-a:hover {
-  color: var(--link-color-hover);
-}
+
 #corpo{
   border: 1px solid red;
   height: 1300px;
@@ -103,30 +83,78 @@ footer{
   
   color: var(--body-color);
   background: var(--body-bg);
-  width: 55%;
+  width: 66%;
   height: 48%;
   float: right;
-  margin-right: 7%;
   margin-bottom: 8px;
-  margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
 }
 
-.conteudo3{
+.perfil{
   color: var(--body-color);
   background: var(--body-bg);
-  width: 30%;
+  width: 32%;
   height: 90%;
   float: left;
-  margin: 10px;
+  margin-right: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.lista{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--footer-color);
+  font-size: 20px;
+}
+.linguagens{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--footer-color);
+  font-size: 30px;
+  border: 0;
 }
 .img{
   width: 100%;
   float: left;
   margin: 0;
+  position: relative;
 }
-.fa-briefcase:before {
-  content: "\f0b1"
+.chart {
+  background: var(--body-color);
+  opacity: 75%;
+  border-radius: 100px;
+  align-items: center;
+  position:relative;
+  padding: 0 2px;
+  margin-right: 20px;
+  margin-top: 3px;
+  display: flex;
+  height: 25px;
+  width: 80%;
+  float: right;
+}
+  .chart span {
+      /* You can modify the value below to change the distance between the percentage number and the bar */
+      margin-left: 5px;
+      color: var(--footer-color);
+      font-weight: bolder;
+  }
+
+.barra {
+  /* You can modify the total time used for the animation here */
+  animation: load 4s normal forwards;
+  border-radius: 100px;
+  background: var(--footer-color);
+  height: 23px;
+  width: 0;
+} 
+
+@keyframes load {
+  0% {
+      width: 0;
+  }
+  100% {
+      /* You need to change the percentage below to match the value in the corresponding <span> */
+      width: 90%;
+  }
 }
