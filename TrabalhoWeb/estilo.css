@@ -1,4 +1,5 @@
 :root {
+  --bg: #d4d1d1;
   --body-bg: #fafafa;
   --body-color: #222;
   --link-color-hover: #ec5840;
@@ -6,6 +7,7 @@
   --footer-color: #3cc368;
 }
 .dark-mode:root {
+    --bg: #242d36;
     --body-bg: #282e35;
     --body-color: #dee2e6;
     --link-color: #dee2e6;
@@ -15,7 +17,7 @@
   }
 
 body {
-  background-color: var(--body-bg);
+  background-color: var(--bg);
   color: var(--body-color);
   font: var(--body-font);
   margin: 0;
@@ -87,6 +89,8 @@ footer{
   height: 48%;
   float: right;
   margin-bottom: 8px;
+  padding-top: 10px;
+  padding-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
 }
@@ -168,5 +172,22 @@ footer{
   }
   100% {
       width: 90%;
+  }
+}
+.progresso-html{
+  color: var(--link-color);
+  animation: loadHTML 3s normal forwards;
+  border-radius: 100px;
+  background: var(--footer-color);
+  height: 20px;
+  width: 0;
+} 
+
+@keyframes loadHTML {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 56%;
   }
 }
