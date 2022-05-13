@@ -68,7 +68,6 @@ a:hover {
 }
 
 #corpo{
-  border: 1px solid red;
   height: 1300px;
   margin: 15px 15px;
 }
@@ -86,7 +85,7 @@ footer{
   color: var(--body-color);
   background: var(--body-bg);
   width: 66%;
-  height: 48%;
+  height: auto;
   float: right;
   margin-bottom: 8px;
   padding-top: 10px;
@@ -190,4 +189,18 @@ footer{
   100% {
       width: 56%;
   }
+}
+.atual{
+  background: var(--footer-color);
+  border: 2px;
+  border-radius: 3px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.conteudo{
+  margin-left: 30px;
+}
+.datas{
+  color: var(--footer-color);
 }
