@@ -122,6 +122,21 @@ footer{
   margin: 0;
   position: relative;
 }
+.atual{
+  background: var(--footer-color);
+  border: 2px;
+  border-radius: 3px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.conteudo{
+  margin-left: 30px;
+}
+.datas{
+  color: var(--footer-color);
+}
+
 .progresso {
   text-align: center;
   background: var(--body-color);
@@ -137,17 +152,17 @@ footer{
   float: right;
 }
 
-.progresso-js{
+.progresso-js-arthur{
   text-align: center;
   color: var(--link-color);
-  animation: loadJS 3s normal forwards;
+  animation: loadJSArthur 3s normal forwards;
   border-radius: 100px;
   background: var(--footer-color);
   height: 20px;
   width: 0;
 } 
 
-@keyframes loadJS {
+@keyframes loadJSArthur {
   0% {
       width: 0;
   }
@@ -156,16 +171,16 @@ footer{
   }
 }
 
-.progresso-css{
+.progresso-css-arthur{
   color: var(--link-color);
-  animation: loadCSS 3s normal forwards;
+  animation: loadCSSArthur 3s normal forwards;
   border-radius: 100px;
   background: var(--footer-color);
   height: 20px;
   width: 0;
 } 
 
-@keyframes loadCSS {
+@keyframes loadCSSArthur {
   0% {
       width: 0;
   }
@@ -173,16 +188,16 @@ footer{
       width: 90%;
   }
 }
-.progresso-html{
+.progresso-html-arthur{
   color: var(--link-color);
-  animation: loadHTML 3s normal forwards;
+  animation: loadHTMLArthur 3s normal forwards;
   border-radius: 100px;
   background: var(--footer-color);
   height: 20px;
   width: 0;
 } 
 
-@keyframes loadHTML {
+@keyframes loadHTMLArthur {
   0% {
       width: 0;
   }
@@ -190,17 +205,61 @@ footer{
       width: 56%;
   }
 }
-.atual{
+
+.progresso-js-pedro{
+  text-align: center;
+  color: var(--link-color);
+  animation: loadJSPedro 3s normal forwards;
+  border-radius: 100px;
   background: var(--footer-color);
-  border: 2px;
-  border-radius: 3px;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+  height: 20px;
+  width: 0;
+} 
+
+@keyframes loadJSPedro {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 4.8%;
+  }
 }
-.conteudo{
-  margin-left: 30px;
+
+.progresso-css-pedro{
+  color: var(--link-color);
+  animation: loadCSSPedro 3s normal forwards;
+  border-radius: 100px;
+  background: var(--footer-color);
+  height: 20px;
+  width: 0;
+} 
+
+@keyframes loadCSSPedro {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 45.1%;
+  }
 }
-.datas{
-  color: var(--footer-color);
+.progresso-html-pedro{
+  color: var(--link-color);
+  animation: loadHTMLPedro 3s normal forwards;
+  border-radius: 100px;
+  background: var(--footer-color);
+  height: 20px;
+  width: 0;
+} 
+
+@keyframes loadHTMLPedro {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 50.1%;
+  }
+}
+
+.dados{
+  color: var(--body-bg);
 }
