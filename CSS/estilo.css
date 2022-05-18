@@ -68,17 +68,19 @@ a {
 }
 
 #corpo{
-  height: 1300px;
+  height: auto;
+  width: auto ;
   margin: 15px 15px;
 }
 #corpo-main{
   text-align: center;
-  height: 1000px;
+  height: 600px;
   margin: 15px 15px;
   color: var(--body-color);
   background: var(--body-bg);
   margin-bottom: 8px;
   padding-top: 10px;
+  padding-bottom: 80px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -109,6 +111,7 @@ a {
 }
 
 footer{
+  clear: both;
   text-align: center;
   color: var(--body-bg);
   background-color:var(--footer-color);
@@ -135,10 +138,12 @@ footer{
   color: var(--body-color);
   background: var(--body-bg);
   width: 32%;
-  height: 90%;
+  height: 70%;
   float: left;
   margin-right: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 80px;
+  margin-bottom: 20px;
 }
 .lista{
   padding-left: 10px;
